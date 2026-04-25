@@ -1,0 +1,54 @@
+.persona-card {
+  display: grid;
+  grid-template-columns: minmax(96px, 160px) minmax(0, 1fr);
+  gap: 16px;
+  align-items: center;
+  max-width: 520px;
+  padding: 16px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #111827;
+}
+
+.persona-card__image {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: contain;
+}
+
+.persona-card__content {
+  min-width: 0;
+}
+
+.persona-card__code {
+  margin: 0 0 4px;
+  color: #64748b;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.persona-card__name {
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.3;
+  font-weight: 700;
+}
+
+.persona-card__desc {
+  margin: 8px 0 0;
+  color: #475569;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+@media (max-width: 480px) {
+  .persona-card {
+    grid-template-columns: 1fr;
+  }
+
+  .persona-card__image {
+    max-width: 220px;
+    justify-self: center;
+  }
+}
